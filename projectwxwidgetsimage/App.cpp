@@ -9,8 +9,9 @@ App::App()
 // Application entry point
 bool App::OnInit()
 {
-	// IMPORTANT! This ensures that: jpg, png, bmp,... files can be handled!
-	wxInitAllImageHandlers();
+	// IMPORTANT! This ensures that: jpg, png, bmp,... files can be handled! 
+	// IMPORTANT! This is for drawing on the frame!
+	// wxInitAllImageHandlers();
 	//
 	m_mainFrame = new MainFrame();
 	m_mainFrame->SetBackgroundColour(wxColour(68, 96, 130));
